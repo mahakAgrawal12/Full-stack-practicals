@@ -1,137 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAYOUT</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-8</title>
     <style>
-        .box{
-            background-color: gray;
-            height: 100px;
-        }
-        .box h2{
-            color: white;
-            line-height: 15vh;
-            text-align: center;
-        }
-        .box1{
-            background-color: skyblue;
-            height: 600px;
-        }
-        .box1 h2{
-            color: white;
-            line-height: 100vh;
-            text-align: center;
-        }
-        #heading{
-            text-align: center;
-        }
-        .circle1{
-            display: inline-flex;
-        }
-        .circle{
-            width: 250px;
-            height: 250px;
-            background-color: yellow;
-            border-radius: 50%;
-            margin: 40px;
-        }
-        #squarebox{
-            display: inline-flex;
-        }
-        .leftbox{
-            height: 532px;
-            width: 700px;
-            background-color: gray;
-            margin-right: 10px;
-        }
-        .leftbox h2{
-            color: white;
-            line-height: 80vh;
-            text-align: center;
-        }
-        .rightbox{
-            width: 700px;
-            height: 150px;
-            background-color: brown;
-            margin-bottom: 10px;
-            padding: 10px;
-        }
-        .rightbox h2{
-            line-height: 15vh;
-            text-align: center;
-        }
-        #reactbox{
-            display: inline-flex;
-        }
-        .boxes{
-                background-color: orange;
-                height: 250px;
-                width: 200px;
-                margin: 50px;
-                padding: 20px;
-        }
-        .footer{
-            background-color: gray;
-            height: 100px;
-        }
-        .footer h2{
-            color: white;
-            line-height: 15vh;
-            text-align: center;
-        }
+*{padding: 0;margin: 0;box-sizing: border-box;}
+html{
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+.box {
+    background-color: gray;
+    height: 80px;
+    text-align: center;
+    display: inline flex;
+    position: fixed;
+    top:0;
+    width: 100%;
+  }
+  .box ul {
+    list-style: none;
+    display: inline-flex;
+  }
+  .box ul li {
+    width: 150px;
+    margin: 20px;
+    padding: 15px;
+  }
+  .box ul li:hover{
+      background-color: white;
+  }
+  .box ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: arial;
+  }
+  .box ul li a:hover{
+      color: black;
+  }
+  .box h2 {
+    color: white;
+    line-height: 15vh;
+    text-align: center;
+  }
+  .banner {
+    background-color: skyblue;
+    height: 600px;
+    margin-top: 100px;
+    position: relative;
+}
+  .banner h1 {
+    color: black;
+    position: absolute;
+    margin-top: 10px;
+    padding: 10px;
+    top: 4px;
+  left: 16px;
+  }
+  .banner img{
+      background-size: cover;
+      height: 600px;
+      width: 100%;
+      background-position: center;
+      position: relative;
+      background-repeat: no-repeat;
+  }
+  
+  #heading {
+    text-align: center;
+  }
+  #heading h1{
+      margin-top: 60px;
+      padding: 20px;
+  }
+  .circle1 {
+    display: inline-flex;
+  }
+  .circle {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 40px;
+  }
+  .circle img{
+      object-fit: cover;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+  }
+  #squarebox {
+    display: inline-flex;
+  }
+  .leftbox {
+    height: 532px;
+    width: 700px;
+    background-color: gray;
+    margin-right: 10px;
+  }
+  .leftbox h2 {
+    color: white;
+  }
+  .leftbox p{
+      color: white;
+      margin: 10px;
+      
+  }
+  .rightbox1 {
+    width: 600px;
+    height: 165px;
+    background-color: brown;
+    position: relative;
+    margin: 10px;
+  }
+  .rightbox1 h2 {
+    text-align: center;
+    position: absolute;
+    top: 4px;
+  left: 16px;
+  }
+  .rightbox1 img{
+      object-fit: cover;
+      width: 600px;
+      height: 165px;
+  }
+  .reactbox {
+    display: inline-flex;
+  }
+  .boxes {
+    background-color: orange;
+    height: 400px;
+    width: 280px;
+    margin: 20px;
+  }
+  .footer {
+    background-color: pink;
+    height: 100px;
+  }
+  .footer p {
+      line-height: 10vh;
+    text-align: center;
+  }
+  .footer a{
+      margin-top: 0%;
+      margin-left: 650px;
+      display: inline-block;
+      height: -50px;
+      text-align: center;
+  }
+  .card {
+    height: 400px;
+    width: 280px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: white;
+  }
+ 
+  .card img{
+    width: 100%;
+    height: 150px;
+
+  }
+  .card h3{
+    text-align: center;
+    margin: 10px;
+  }
+    .mybutton{
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      font-family: arial;
+      background-color: red;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+    .mybutton:hover
+    {
+    background-color: blue;
+    }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="box">
-        <h2>Header</h2>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#technology">TECHNOLOGIES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      </div>
+      <a id= "home">
+    <div class="banner"></a>
+      <img src="./practicals/Images/book-education-laptop-260nw-283529711.jpg" >
+      <h1>PRACTICAL - 8</h1>
     </div>
-    <div class="box1">
-        <h2>Banner</h2>
-    </div>
+    <a id="team">
     <div id="heading">
-    <h2> Section-1</h2>
+      <h1>Team Members</h1></a>
     </div>
-    <div class= "circle1">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+   
+    <div class="circle1">
+      <div class="circle">
+        <img src="./practicals/Images/mahi.jpeg" >
+      </div>
+      <div class="circle">
+        <img src="./practicals/Images/shreya.jpeg" />
+      </div>
+      <div class="circle">
+        <img src="./practicals/Images/paavni.jpg" />
+      </div>
+      <div class="circle">
+        <img src="./practicals/Images/sudha.jpeg" />
+      </div>
     </div>
+    <a id="about">
     <div id="heading">
-        <h2> Section-2</h2>
+     <h1>About Us</h1></a>
     </div>
     <div id="squarebox">
-        <div class="leftbox">
-            <h2> Main Content </h2>
+      <div class="leftbox">
+        <h2>About Projects</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa
+          provident molestiae, consequatur mollitia error aspernatur. Quis
+          explicabo quaerat consequatur officiis? Officiis quis mollitia eos
+          cupiditate. Odit nulla unde voluptatibus! Quisquam porro obcaecati
+          sequi. Neque dicta consequatur, aspernatur maxime inventore natus
+          eveniet facilis minima repellendus expedita repudiandae. Ab debitis
+          recusandae quisquam natus in autem facilis amet, eius assumenda error
+          ducimus non. Et, accusamus officia, iure in adipisci beatae, maiores
+          cupiditate error ad possimus ex soluta est cum quos porro sit ratione
+          maxime minima rem sint sunt explicabo aspernatur. Accusantium velit
+          incidunt minus atque animi officia unde, blanditiis maxime. Quibusdam,
+          porro. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ratione temporibus nobis, minus dignissimos est quis aliquam rem
+          quibusdam minima tempore consequuntur maxime distinctio rerum beatae
+          commodi incidunt! Molestiae, repellendus vitae! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Aliquam illum, esse earum
+          recusandae facilis minus et aperiam ullam rem ipsum consectetur, velit
+          vero ipsam voluptatibus ratione quod sint ipsa praesentium labore
+          incidunt suscipit? Accusantium ad modi odio fugit, optio quae pariatur
+          soluta dolore sequi laborum magni dolor. Libero debitis voluptate,
+          similique quisquam adipisci inventore alias soluta id ea sed repellat
+          odit. Animi praesentium ea sequi, ad quisquam reprehenderit quam,
+          illum architecto, quae saepe culpa aliquid et provident iste molestias
+          repellendus reiciendis ullam nulla rerum. Officia dignissimos deleniti
+          illum rem quia cum pariatur itaque libero distinctio aspernatur nisi
+          odio, facere tempora impedit omnis aliquid, est, mollitia alias?
+          Doloribus placeat nam eius, animi temporibus ex vitae itaque dolor,
+          quas quam magni, optio consequuntur reiciendis repellat illum illo
+          molestias minima cupiditate. Tempora, voluptate sapiente harum vitae
+          modi ipsum accusantium voluptatibus fugiat hic est, quae ea corrupti
+          iste optio officiis repudiandae tenetur porro enim incidunt, eum
+          placeat libero. Quos illum praesentium facilis temporibus molestias
+          labore doloribus eveniet, aperiam, impedit, doloremque veritatis sint?
+          Similique velit iusto officiis pariatur itaque magni nobis
+          exercitationem. Ipsum ut illum libero facilis nobis a repellendus hic
+          nisi perferendis soluta atque blanditiis!
+        </p>
+      </div>
+      <div class="rightbox">
+        <div class="rightbox1">
+          <h2>Project-1</h2>
+          <img src="./practicals/Images/project1.jpg">
         </div>
-        <div>
-            <div class="rightbox">
-                <h2>Article-1</h2>
-            </div>
-            <div class="rightbox">
-                <h2>Article-2</h2>
-            </div>
-            <div class="rightbox">
-                <h2>Article-3</h2>
-            </div>
+        <div class="rightbox1">
+          <h2>Project-2</h2>
+          <img src="./practicals/Images/project2.jpg">
+        </div>
+        <div class="rightbox1">
+          <h2>Project-3</h2>
+          <img src="./practicals/Images/project3.jpg">
+        </div>
         </div>
     </div>
-    <div id = "heading">
-        <h2> Section-3</h2>
-    </div>
-    <div id="reactbox">
-        <div class="boxes"></div>
-        <div class="boxes"></div>
-        <div class="boxes"></div>
-        <div class="boxes"></div>
-    </div>
+    
     <div id="heading">
-        <h2>Section-4</h2>
+        <a id="technology"> <h1>Technology Used</h1></a>
+    </div>
+    <div class="reactbox">
+      <div class="boxes"><div class="card" id="card1">
+        <div class="image-heading">
+          <img src="./practicals/htmli.png" alt="">
+        </div>
+        <h3>Introduction to HTML</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet
+            dignissimos culpa quibusdam totam sit quia quas provident doloremque.
+            Odit dolores minima aspernatur maiores hic similique. 
+        </p>
+        <div class="image" style="text-align: center;">
+        <a href="./practicals/htmlintro.html" class="mybutton">Read More</a>
+        </div>
+      </div></div>
+      <div class="boxes"><div class="card" id="card2">
+        <div class="image-heading">
+            <img src="./practicals/creative-css3-tutorials.jpg" alt="">
+          </div>
+        <h3>Introduction to CSS</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet
+            dignissimos culpa quibusdam totam sit quia quas provident doloremque.
+            Odit dolores minima aspernatur maiores hic similique.
+        </p>
+        <div class="image" style="text-align: center;">
+            <a href="./practicals/cssinto.html" class="mybutton">Read More</a>
+            </div>
+      </div></div>
+      <div class="boxes"><div class="card" id="card3">
+        <div class="image-heading">
+            <img src="./practicals/jquery.jpg" alt="">
+          </div>
+        <h3>Introduction to JavaScript</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet
+          dignissimos culpa quibusdam totam sit quia quas provident doloremque.
+          Odit dolores minima aspernatur maiores hic similique.
+        </p>
+        <div class="image" style="text-align: center;">
+            <a href="./practicals/jsintro.html" class="mybutton">Read More</a>
+            </div>
+      </div></div>
+      <div class="boxes"><div class="card" id="card4">
+        <div class="image-heading">
+            <img src="./practicals/bootstrap.png" alt="">
+          </div>
+        <h3>Introduction to Bootstrap</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet
+            dignissimos culpa quibusdam totam sit quia quas provident doloremque.
+            Odit dolores minima aspernatur maiores hic similique.</p>
+          <div class="image" style="text-align: center;">
+            <a href="./practicals/bootstrapintro.html" class="mybutton">Read More</a>
+            </div>
+      </div></div>
+    </div>
+    <a id="contact">
+    <div id="heading">
+      <h1>Contact</h1></a>
     </div>
     <div class="footer">
-        <h2>Footer</h2>
+      <p>Website template for Practical-8 
+        </p>
+        <a href="#" id="top">Back to Top</a>
     </div>
-</body>
+  </body>
 </html>
