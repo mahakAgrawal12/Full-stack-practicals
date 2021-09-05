@@ -1,0 +1,179 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+html{
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+.box {
+    background-color: gray;
+    height: 80px;
+    text-align: center;
+    display: inline flex;
+    position: fixed;
+    top:0;
+    width: 100%;
+  }
+  .box ul {
+    list-style: none;
+    display: inline-flex;
+  }
+  .box ul li {
+    width: 150px;
+    margin: 20px;
+    padding: 15px;
+  }
+  .box ul li:hover{
+      background-color: white;
+  }
+  .box ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: arial;
+  }
+  .box ul li a:hover{
+      color: black;
+  }
+  .box h2 {
+    color: white;
+    line-height: 15vh;
+    text-align: center;
+  }
+  .banner {
+    background-color: skyblue;
+    height: 600px;
+    margin-top: 100px;
+    position: relative;
+}
+  .banner h1 {
+    color: black;
+    position: absolute;
+    margin-top: 10px;
+    padding: 10px;
+    top: 4px;
+  left: 16px;
+  }
+  .banner img{
+      background-size: cover;
+      height: 600px;
+      width: 100%;
+      background-position: center;
+      position: relative;
+      background-repeat: no-repeat;
+  }
+  
+  #heading {
+    text-align: center;
+  }
+  #heading h1{
+      margin-top: 60px;
+      padding: 20px;
+  }
+  .circle1 {
+    display: inline-flex;
+  }
+  .circle {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 40px;
+  }
+  .circle img{
+      object-fit: cover;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+  }
+  #squarebox {
+    display: inline-flex;
+  }
+  .leftbox {
+    height: 532px;
+    width: 700px;
+    background-color: gray;
+    margin-right: 10px;
+  }
+  .leftbox h2 {
+    color: white;
+  }
+  .leftbox p{
+      color: white;
+      margin: 10px;
+      
+  }
+  .rightbox1 {
+    width: 600px;
+    height: 165px;
+    background-color: brown;
+    position: relative;
+    margin: 10px;
+  }
+  .rightbox1 h2 {
+    text-align: center;
+    position: absolute;
+    top: 4px;
+  left: 16px;
+  }
+  .rightbox1 img{
+      object-fit: cover;
+      width: 600px;
+      height: 165px;
+  }
+  .reactbox {
+    display: inline-flex;
+  }
+  .boxes {
+    background-color: orange;
+    height: 400px;
+    width: 280px;
+    margin: 20px;
+  }
+  .footer {
+    background-color: pink;
+    height: 100px;
+  }
+  .footer p {
+      line-height: 10vh;
+    text-align: center;
+  }
+  .footer a{
+      margin-top: 0%;
+      margin-left: 650px;
+      display: inline-block;
+      height: -50px;
+      text-align: center;
+  }
+  .card {
+    height: 400px;
+    width: 280px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: white;
+  }
+ 
+  .card img{
+    width: 100%;
+    height: 150px;
+
+  }
+  .card h3{
+    text-align: center;
+    margin: 10px;
+  }
+    .mybutton{
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      font-family: arial;
+      background-color: red;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+    .mybutton:hover
+    {
+    background-color: blue;
+    }
