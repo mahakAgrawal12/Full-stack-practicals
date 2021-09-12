@@ -11,6 +11,7 @@ html{
     position: fixed;
     top:0;
     width: 100%;
+    z-index: 10;
   }
   .box ul {
     list-style: none;
@@ -22,7 +23,8 @@ html{
     padding: 15px;
   }
   .box ul li:hover{
-      background-color: white;
+      background-color: orange;
+      /* color: black; */
   }
   .box ul li a{
     text-decoration: none;
@@ -31,7 +33,7 @@ html{
     font-family: arial;
   }
   .box ul li a:hover{
-      color: black;
+      /* color: black; */
   }
   .box h2 {
     color: white;
@@ -59,7 +61,7 @@ html{
       background-position: center;
       position: relative;
       background-repeat: no-repeat;
-  }
+    }
   
   #heading {
     text-align: center;
@@ -72,7 +74,7 @@ html{
     display: inline-flex;
   }
   .circle {
-    width: 250px;
+    width: 25%;
     height: 250px;
     background-color: yellow;
     border-radius: 50%;
@@ -118,6 +120,7 @@ html{
       object-fit: cover;
       width: 600px;
       height: 165px;
+      position: absolute;
   }
   .reactbox {
     display: inline-flex;
