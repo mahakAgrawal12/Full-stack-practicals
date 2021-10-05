@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 600px;  
+    margin: 50px auto;
+    padding: 20px;
+    /* border: 2px solid red; */
+    font-family: arial;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 20px;
+    height: 900px;
+}
+#th5{
+    color: blue;
+    padding: 20px;
+}
+
+.but
+{
+    background-color: blue;
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.but:hover
+{
+    background-color: yellow;
+}
+.td
+{
+    margin: 10px;
+    font-size: 5px;
+}
+h3
+{
+    margin-right: 100px;
+}
+button
+{
+    color: white;
+    border: none;
+}
