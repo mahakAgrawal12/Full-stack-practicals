@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical14->js project-1</title>
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="./practical14.css">
+</head>
+<body>
+    <script>
+        var g = 0;
+        function myfunction(){
+            document.getElementById("demo").innerHTML=g.toString();
+            g++;
+            return g;
+        }
+        function myfunction1(){
+            document.getElementById("demo").innerHTML=g.toString();
+            if(g==0){
+                g=0;
+            }
+            else{
+            g--;
+            }
+            return g;
+        }
+    </script>
+    <div class="container">
+    <h1>COUNTER</h1>
+    <div class="task">
+    <button type="button" onclick="myfunction1()"> <i class="fa fa-minus-square"></i></button>
+    <p id="demo">0</p>
+    <button type= "button" onclick="myfunction()"> <i class="fa fa-plus-square"></i></button>
+    </div>
+</div>
+</body>
+</html>

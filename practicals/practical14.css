@@ -1,0 +1,24 @@
+.container{
+    text-align: center;
+}
+.task{
+    display: inline-flex;
+}
+body{
+    background-color: gray;
+}
+p{
+    color: yellow;
+    font-size: 40px;
+    margin-top: 8px;
+}
+h1{
+    color: white;
+    font-size: 40px;
+}
+button{
+    background-color: yellow;
+    padding: 15px;
+    margin: 90px;
+    margin-top: 10px;
+}
