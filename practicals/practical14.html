@@ -11,28 +11,28 @@
 </head>
 <body>
     <script>
-        var g = 0;
-        function myfunction(){
-            g=g+1
-            document.getElementById("demo").innerHTML=g;
-            return g;
+        var value = 0;
+        function increament(){
+            value=value+1
+            document.getElementById("demo").innerHTML=value;
+            return value;
         }
-        function myfunction1(){
-            if(g==0){
+        function decrement(){
+            if(value==0){
                 return;
             }
             else{
-                g=g-1;
-                document.getElementById("demo").innerHTML=g;
+                value=value-1;
+                document.getElementById("demo").innerHTML=value;
             }
         }
     </script>
     <div class="container">
     <h1>COUNTER</h1>
     <div class="task">
-    <button type="button" onclick="myfunction1()"> <i class="fa fa-minus-square"></i></button>
+    <button type="button" onclick="decrement()"> <i class="fa fa-minus-square"></i></button>
     <p id="demo">0</p>
-    <button type= "button" onclick="myfunction()"> <i class="fa fa-plus-square"></i></button>
+    <button type= "button" onclick="increament()"> <i class="fa fa-plus-square"></i></button>
     </div>
 </div>
 </body>
