@@ -13,19 +13,18 @@
     <script>
         var g = 0;
         function myfunction(){
-            document.getElementById("demo").innerHTML=g.toString();
-            g++;
+            g=g+1
+            document.getElementById("demo").innerHTML=g;
             return g;
         }
         function myfunction1(){
-            document.getElementById("demo").innerHTML=g.toString();
             if(g==0){
-                g=0;
+                return;
             }
             else{
-            g--;
+                g=g-1;
+                document.getElementById("demo").innerHTML=g;
             }
-            return g;
         }
     </script>
     <div class="container">
